@@ -15,10 +15,7 @@ servers = []
 for server in data['servers'].array:
     if not server in servers:
         servers.append(server)
-    else:
-        continue
-print(logins)
-print(data.servers)
+
 
 def sending(logins):
     outlook = client.Dispatch('Outlook.Application')
